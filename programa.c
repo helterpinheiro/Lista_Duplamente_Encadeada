@@ -165,13 +165,11 @@ void listaMenu(Dllist *l)
 			case 7:
 				system("cls");
 				if(dllDestroy(l) == TRUE){
-					free(l);
+					l = NULL;
 					printf("Lista destruida\n");
-				}else{
-					printf("\n Lisra encontra-se com elementos\n");
 				}
 			break;
-
+				
 			case 8:
 				system("cls");
 				listarLista(l);
